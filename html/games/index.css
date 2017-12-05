@@ -6,6 +6,47 @@
   --green: #56a326;
   --gray: #bbbdcf;
   --yellow: #f2b536;
+
+  /* spaces */
+  --space-small: 0.5em;
+  --space-normal: 1em;
+  --space-medium: 1.5em;
+  --space-big: 2em;
+  /* spaces */
+
+  /* fonts */
+  --font-small: 0.8em;
+  --font-normal: 1em;
+  --font-medium: 1.2em;
+  --font-big: 1.5em;
+  /* fonts */
+
+  /* sizes */
+  --header-height: 4.5em;
+  /* sizes */
+
+  /* z-index */
+  --header-z: 1000;
+  /* z-index */
+}
+
+a,
+input {
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
 }
 
 * {
@@ -13,20 +54,86 @@
 }
 
 body {
+  background-color: var(--darkblue);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   margin: 0;
   padding: 0;
 }
 
+/* helpers */
+.container {
+  margin-top: var(--header-height);
+}
+/* helpers */
+
+/* Header */
 .Header {
-  border: 4px solid red;
+  background-color: var(--lightblue);
+  color: white;
+  height: var(--header-height);
+  padding: var(--space-small);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: var(--header-z);
 }
 
+.Header-content {
+  display: flex;
+  align-items: center;
+}
+
+.Header-actions {
+  background-color: var(--green);
+  border-radius: 10em;
+  overflow: hidden;
+}
+
+.Header-action {
+  background-color: var(--green);
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: var(--font-normal);
+  padding: var(--space-small) var(--space-normal);
+}
+/* Header */
+
+/* Logo */
+.Logo {
+  font-size: var(font-medium);
+  padding: 0 var(--space-normal);
+}
+
+.Logo-link {
+  color: white;
+  font-weight: bold;
+  font-size: var(--font-medium);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/* Logo */
+
+/* Navigation */
+.Navigation-link {
+  color: white;
+  font-size: var(--font-medium);
+  display: inline-block;
+  padding: var(--space-small) var(--space-normal);
+  text-decoration: none;
+}
+/* Navigation */
+
 .Home {
-  border: 4px solid blue;
+  /* border: 4px solid blue; */
 }
 
 .Footer {
-  border: 4px solid green;
+  /* border: 4px solid green; */
 }
