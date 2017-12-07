@@ -62,9 +62,28 @@ body {
   padding: 0;
 }
 
+img {
+  max-width: 100%;
+}
+
 /* helpers */
 .container {
   margin-top: var(--header-height);
+}
+
+.title {
+  color: white;
+}
+
+.btn {
+  border: none;
+  color: white;
+  font-size: var(--font-normal);
+  padding: var(--space-small) var(--space-normal);
+}
+
+.btn-normal {
+  background-color: var(--lightblue);
 }
 /* helpers */
 
@@ -165,14 +184,64 @@ body {
 
 .Hero-title {
   color: var(--gray);
-  font-size: var(--font-medium);
+  font-size: var(--font-big);
 }
 
+/* Hero */
 .Hero-text {
   color: white;
   font-size: var(--font-large);
 }
+/* Hero */
 
+/* Popular */
+.Popular {
+  max-width: 1024px;
+  margin: auto;
+}
+
+.Popular-heading {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--space-big) var(--space-normal) var(--space-normal);
+}
+
+/* Popular */
+
+/* GameList */
+.GameList {
+  display: flex;
+  flex-wrap: wrap;
+  padding: var(--space-small);
+}
+/* GameList */
+
+/* Game */
+.Game {
+  width: calc((100% / 5) - var(--space-normal));
+  margin: var(--space-small);
+  position: relative;
+  text-align: center;
+}
+
+.Game-content {
+  color: var(--darkblue);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+/* Game */
+
+/* Footer */
 .Footer {
   /* border: 4px solid green; */
 }
+/* Footer */
