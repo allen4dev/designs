@@ -109,6 +109,11 @@ img {
   border-radius: 10em;
 }
 
+.btn-social {
+  border-radius: 10em;
+  font-weight: bold;
+}
+
 .btn-normal {
   background-color: var(--lightblue);
 }
@@ -428,5 +433,16 @@ img {
 
 /* Footer */
 .Footer {
+  background-color: var(--lightblue);
+  padding: 0 var(--space-big);
+  margin-top: var(--space-big);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Footer-button {
+  border: none;
+  padding: var(--space-small);
 }
 /* Footer */
