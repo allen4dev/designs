@@ -74,6 +74,31 @@ img {
 
 .title {
   color: white;
+  margin: var(--space-big) 0;
+}
+
+.truncate {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.price {
+  color: var(--yellow);
+  font-size: var(--font-medium);
+  display: flex;
+  align-items: center;
+}
+
+.price::after {
+  content: '-50%';
+  color: white;
+  font-size: 0.5em;
+  background-color: var(--blue);
+  padding: var(--space-small);
+  margin-left: var(--space-small);
 }
 
 .btn {
@@ -198,15 +223,17 @@ img {
 /* Hero */
 
 /* Popular */
-.Popular {
+.Popular,
+.Deals {
   max-width: 1024px;
   margin: auto;
 }
 
 .Popular-heading {
+  margin-top: var(--space-normal);
   display: flex;
   justify-content: space-between;
-  padding: var(--space-big) var(--space-normal) var(--space-normal);
+  align-items: center;
 }
 
 /* Popular */
@@ -250,7 +277,7 @@ img {
 }
 
 .Stores-title {
-  padding: var(--space-normal) 6em var(--space-big);
+  padding: 0 6em var(--space-small);
 }
 
 .Stores-controls {
@@ -356,6 +383,48 @@ img {
   width: 40%;
 }
 /* StoreItem */
+
+/* Deals */
+.Deals-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* Deals */
+
+/* Deal */
+.Deal {
+  background-color: var(--lightblue);
+  border-radius: 10px;
+  margin: var(--space-normal);
+  padding: var(--space-normal);
+  width: calc((100% / 4) - var(--space-big));
+}
+
+.Deal-logo {
+  width: 30px;
+}
+
+.Deal-title {
+  color: white;
+}
+
+.Deal-detail {
+  color: var(--gray);
+  margin: var(--space-small) 0;
+}
+
+.Deal-pricing {
+  color: white;
+  margin: var(--space-small) 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Deal-button {
+  width: 100%;
+}
+/* Deal */
 
 /* Footer */
 .Footer {
