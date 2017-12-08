@@ -24,7 +24,7 @@
 
   /* sizes */
   --header-height: 4.5em;
-  --banner-size: 30em;
+  --banner-size: calc(100vh - var(--header-height));
   /* sizes */
 
   /* z-index */
@@ -245,11 +245,21 @@ img {
 /* Game */
 
 /* Stores */
+.Stores {
+  position: relative;
+}
+
 .Stores-title {
   padding: var(--space-normal) 6em var(--space-big);
 }
 
 .Stores-controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 /* Stores */
 
@@ -308,9 +318,6 @@ img {
   margin-right: 10em;
 }
 
-.Store-offer {
-}
-
 .Store-offerTitle {
   color: white;
 }
@@ -333,6 +340,20 @@ img {
 
 /* StoreItem */
 .StoreItem {
+  background-color: var(--lightblue);
+  border-radius: 2em;
+  color: white;
+  margin: var(--space-small);
+  padding: var(--space-normal) var(--space-small);
+  width: calc((100% / 5) - var(--space-normal));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.StoreItem-logoContainer {
+  width: 40%;
 }
 /* StoreItem */
 
