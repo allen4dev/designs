@@ -24,6 +24,7 @@
 
   /* sizes */
   --header-height: 4.5em;
+  --banner-size: 30em;
   /* sizes */
 
   /* z-index */
@@ -80,10 +81,15 @@ img {
   color: white;
   font-size: var(--font-normal);
   padding: var(--space-small) var(--space-normal);
+  border-radius: 10em;
 }
 
 .btn-normal {
   background-color: var(--lightblue);
+}
+
+.btn-success {
+  background-color: var(--green);
 }
 /* helpers */
 
@@ -150,13 +156,10 @@ img {
 }
 /* Navigation */
 
-.Home {
-  /* border: 4px solid blue; */
-}
-
+/* Hero */
 .Hero {
   background-color: rgba(0, 0, 0, 0.2);
-  height: 50vh;
+  height: var(--banner-size);
   position: relative;
   display: flex;
   justify-content: center;
@@ -238,10 +241,102 @@ img {
   bottom: 0;
   left: 0;
 }
+
 /* Game */
+
+/* Stores */
+.Stores-title {
+  padding: var(--space-normal) 6em var(--space-big);
+}
+
+.Stores-controls {
+}
+/* Stores */
+
+/* Store */
+.Store {
+  height: var(--banner-size);
+  padding: var(--space-big);
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.Store::before {
+  content: '';
+  background-image: url('./images/store.jpg');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -100;
+}
+
+.Store-title {
+  color: white;
+  font-size: var(--font-big);
+  margin-bottom: var(--space-big);
+}
+
+.Store-game {
+  display: flex;
+  color: var(--gray);
+  align-items: center;
+}
+
+.Store-game:not(:last-child) {
+  margin-bottom: var(--space-normal);
+  /* display: flex; */
+}
+
+.Store-gameLogo {
+  /* flex: 1; */
+  /* display: flex; */
+  width: 50px;
+  margin-right: var(--space-medium);
+}
+
+.Store-gameTitle {
+  flex: 2;
+}
+
+.Store-info {
+  margin-right: 10em;
+}
+
+.Store-offer {
+}
+
+.Store-offerTitle {
+  color: white;
+}
+
+.Store-offerText {
+  color: var(--gray);
+  margin: var(--space-small) 0;
+  display: inline-block;
+}
+
+.Store-offerLogo {
+  width: 200px;
+}
+
+.Store-buttons {
+  margin-top: var(--space-medium);
+}
+
+/* Store */
+
+/* StoreItem */
+.StoreItem {
+}
+/* StoreItem */
 
 /* Footer */
 .Footer {
-  /* border: 4px solid green; */
 }
 /* Footer */
