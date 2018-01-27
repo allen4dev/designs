@@ -6,3 +6,16 @@
   --gray: #c7c7c7;
   --red: #9b2633;
 }
+
+.title {
+  color: var(--gray);
+  text-transform: uppercase;
+}
+
+.title-red {
+  text-shadow: 0 0 5px var(--red), 0 0 15px white;
+}
+
+.title-blue {
+  text-shadow: 0 0 5px var(--blue), 0 0 15px white;
+}
