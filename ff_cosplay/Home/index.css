@@ -100,11 +100,37 @@
 /* Photos*/
 .Photos {
   grid-area: photos;
+  text-align: center;
+}
+
+.Photos-title {
+  margin-bottom: 1em;
+}
+
+.PhotoList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em;
+}
+
+.Photo {
+  box-shadow: 3px 3px 5px 3px var(--blue);
 }
 /* Photos*/
 
 /* Footer */
 .Footer {
   grid-area: footer;
+  text-align: center;
+  padding: 1em 0;
+}
+
+.Footer-title {
+  margin-bottom: 1em;
+}
+
+.Footer-text {
+  color: var(--gray);
+  line-height: 1.5em;
 }
 /* Footer */
